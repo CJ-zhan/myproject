@@ -71,11 +71,6 @@
 
       <a-form-item>
         <a-checkbox v-decorator="['rememberMe', { valuePropName: 'checked' }]">{{ $t('user.login.remember-me') }}</a-checkbox>
-        <router-link
-          :to="{ name: 'recover', params: { user: 'aaa'} }"
-          class="forge-password"
-          style="float: right;"
-        >{{ $t('user.login.forgot-password') }}</router-link>
       </a-form-item>
 
       <a-form-item style="margin-top:24px">
@@ -90,16 +85,6 @@
       </a-form-item>
 
       <div class="user-login-other">
-        <span>{{ $t('user.login.sign-in-with') }}</span>
-        <a>
-          <a-icon class="item-icon" type="alipay-circle"></a-icon>
-        </a>
-        <a>
-          <a-icon class="item-icon" type="taobao-circle"></a-icon>
-        </a>
-        <a>
-          <a-icon class="item-icon" type="weibo-circle"></a-icon>
-        </a>
         <router-link class="register" :to="{ name: 'register' }">{{ $t('user.login.signup') }}</router-link>
       </div>
     </a-form>
